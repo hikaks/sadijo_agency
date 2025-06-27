@@ -24,13 +24,6 @@
             <span>Dashboard</span>
         </a>
     </li>
-  <!-- Nav Item - Tentang Kami -->
-<li class="nav-item">
-    <a class="nav-link" href="index.php?page=tentang-kami">
-        <i class="fas fa-fw fa-info-circle"></i>
-        <span>Tentang Kami</span>
-    </a>
-</li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
@@ -76,6 +69,15 @@
             <i class="fas fa-fw fa-cogs"></i>
             <span>Pengaturan Toko</span></a>
     </li>
+
+      <!-- Nav Item - Tentang Kami -->
+<li class="nav-item">
+    <a class="nav-link" href="index.php?page=tentang-kami">
+        <i class="fas fa-fw fa-info-circle"></i>
+        <span>Tentang Kami</span>
+    </a>
+</li>
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
