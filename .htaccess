@@ -1,3 +1,6 @@
-Options -Indexes
-ErrorDocument 404  http://localhost
-ErrorDocument 403  http://localhost
+Options +FollowSymLinks
+RewriteEngine On
+
+DirectoryIndex index.php index.html
+
+# Redirect error ke halaman lokal (jangan localhost)
