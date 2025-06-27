@@ -1,6 +1,12 @@
+# Aktifkan URL rewriting
 Options +FollowSymLinks
 RewriteEngine On
 
-DirectoryIndex index.php index.html
+# Tentukan file utama yang dibuka saat akses folder
+DirectoryIndex index.php index.html index.htm
 
-# Redirect error ke halaman lokal (jangan localhost)
+# Redirect halaman error ke halaman lokal (jika kamu punya file-nya)
+# Jika belum punya, baris ini bisa dihapus sementara
+
+# ErrorDocument 403 /403.html
+# ErrorDocument 404 /404.html
