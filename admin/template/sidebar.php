@@ -1,7 +1,7 @@
 <!--sidebar start-->
-<?php
-$id = $_SESSION['admin']['id_member'];
-$hasil_profil = $lihat->member_edit($id);
+<?php 
+    $id = $_SESSION['admin']['id_member'];
+    $hasil_profil = $lihat -> member_edit($id);
 ?>
 <!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -24,7 +24,13 @@ $hasil_profil = $lihat->member_edit($id);
             <span>Dashboard</span>
         </a>
     </li>
-
+  <!-- Nav Item - Tentang Kami -->
+<li class="nav-item">
+    <a class="nav-link" href="index.php?page=tentang-kami">
+        <i class="fas fa-fw fa-info-circle"></i>
+        <span>Tentang Kami</span>
+    </a>
+</li>
 
     <!-- Divider -->
     <hr class="sidebar-divider">
@@ -70,15 +76,6 @@ $hasil_profil = $lihat->member_edit($id);
             <i class="fas fa-fw fa-cogs"></i>
             <span>Pengaturan Toko</span></a>
     </li>
-
-    <!-- Nav Item - Tentang Kami -->
-    <li class="nav-item">
-        <a class="nav-link" href="index.php?page=tentang-kami">
-            <i class="fas fa-fw fa-info-circle"></i>
-            <span>Tentang Kami</span>
-        </a>
-    </li>
-
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
@@ -102,8 +99,7 @@ $hasil_profil = $lihat->member_edit($id);
             <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                 <i class="fa fa-bars"></i>
             </button>
-            <h5 class="d-lg-block d-none mt-2"><b><?php echo $toko['nama_toko']; ?>,
-                    <?php echo $toko['alamat_toko']; ?></b></h5>
+            <h5 class="d-lg-block d-none mt-2"><b><?php echo $toko['nama_toko'];?>, <?php echo $toko['alamat_toko'];?></b></h5>
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- <div class="topbar-divider d-none d-sm-block"></div> -->
@@ -113,9 +109,9 @@ $hasil_profil = $lihat->member_edit($id);
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <img class="img-profile rounded-circle"
-                            src="assets/img/user/<?php echo $hasil_profil['gambar']; ?>">
+                            src="assets/img/user/<?php echo $hasil_profil['gambar'];?>">
                         <span
-                            class="mr-2 d-none d-lg-inline text-gray-600 small ml-2"><?php echo $hasil_profil['nm_member']; ?></span>
+                            class="mr-2 d-none d-lg-inline text-gray-600 small ml-2"><?php echo $hasil_profil['nm_member'];?></span>
                         <i class="fas fa-angle-down"></i>
                     </a>
                     <!-- Dropdown - User Information -->
