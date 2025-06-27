@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - echo "Mulai proses deployment..."
+    - export DEPLOYPATH=/home/sadh5795/public_html
+    - /bin/rsync -av --exclude=".git" --delete ./ $DEPLOYPATH
+    - echo "Deployment selesai."
