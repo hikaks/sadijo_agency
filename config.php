@@ -5,9 +5,9 @@ error_reporting(0);
 
 	// sesuaikan dengan server anda
 	$host 	= 'localhost'; // host server
-	$user 	= 'root';  // username server
-	$pass 	= ''; // password server, kalau pakai xampp kosongin saja
-	$dbname = 'db_toko'; // nama database anda
+	$user 	= 'sadh5795_jili';  // username server
+	$pass 	= 'opan789456!'; // password server, kalau pakai xampp kosongin saja
+	$dbname = 'sadh5795_db_toko'; // nama database anda
 	
 	try{
 		$config = new PDO("mysql:host=$host;dbname=$dbname;", $user,$pass);
